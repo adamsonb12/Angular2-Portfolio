@@ -1,0 +1,12 @@
+h1, h3 {
+  text-align: center;
+}
+
+#content-description {
+  background-color: white;
+  margin-top: 25px;
+}
+
+.img-content {
+  width: 100%;
+}

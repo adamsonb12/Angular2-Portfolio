@@ -9,6 +9,7 @@ import {ExperienceService} from "../experience.service";
 })
 export class ExperiencesListComponent implements OnInit {
 
+  public image: string;
   experiences: Experience[] = [];
 
   constructor(private experienceService: ExperienceService) {}
@@ -19,6 +20,11 @@ export class ExperiencesListComponent implements OnInit {
 
   onSelected(experience: Experience) {
 
+  }
+
+  getMyImage(name: string) {
+    this.image = '../../../assets/img/' + name;
+    return this.image;
   }
 
 }
